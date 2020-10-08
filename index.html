@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Cookbook | Home</title>
     <meta charset="UTF-8" />
+    <title>Cookbook | Home</title>
     <!-- Font Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <!-- Font Awesome -->
@@ -13,7 +13,7 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet" type:="text/css" />
+    <link href="style.css" rel="stylesheet" />
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Custom JS -->
@@ -21,273 +21,363 @@
 </head>
 
 <body>
-
-
-
-
-
-	
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-			<a class="navbar-brand" href="#">CookBook</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">CookBook</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Our recipes</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="#recipes">Our Recipes</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                   
+					<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search" />       
                     <button class="btn-filter btn btn-success" type="submit" style="margin-bottom: 0px;">Search</button>
 				</form>
-			</div></div>
-        </nav>
+            </div>
+        </div>
+    </nav>
         
+    <div class="container" style="padding-top:30px;padding-bottom: 30px;background-color: #FFF;">
 
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to our CookBook!</h1>
+            <p class="lead">Here you will find our most delicious recipes and tasty menu suggestions for every day.</p>
+            <hr class="my-4" style="max-width:800px;">
+            <p>Do you like to cook yourself? Do you have good recipe ideas?</p>
+            <p class="lead"><a class="btn btn-danger btn-lg" href="#" role="button">Join in!</a></p>
+        </div>
 
-        <div class="container" style="padding-top:30px;background-color: #FFF;">
-
-
-            <div class="jumbotron">
-                <h1 class="display-4">Welcome to our CookBook!</h1>
-                <p class="lead">Here you will find our most delicious recipes and tasty menu suggestions for every day.</p>
-                <hr class="my-4" style="max-width:800px;">
-                <p>Do you like to cook yourself? Do you have good recipe ideas?</p>
-                <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="#" role="button">Join in!</a>
-                </p>
-              </div>
-
-
-            <!-- Filter -->
+        <!-- Filter -->
+        <a id="recipes"></a>
         <h2>Filter Recipes</h2>
         <div class="filter-nav">
-        <button class="btn-filter btn btn-success" data-filter="all">All Recipes</button>
-        <button class="btn-filter btn btn-primary" data-filter="svenja">Svenja's</button>
-        <button class="btn-filter btn btn-primary" data-filter="joseph">Joseph's</button>
-        <button class="btn-filter btn btn-primary" data-filter="heiko">Heiko's</button> 
+            <button class="btn-filter btn btn-success active" data-filter="all">All Recipes</button>
+            <button class="btn-filter btn btn-success" data-filter="svenja">Svenja's</button>
+            <button class="btn-filter btn btn-success" data-filter="joseph">Joseph's</button>
+            <button class="btn-filter btn btn-success" data-filter="heiko">Heiko's</button> 
+        </div>
+        <!-- .Filter -->
+
+            
+        <div class="row row-cols-1 row-cols-sm-2 row row-cols-lg-3">
+
+            <!-- Card -->
+            <div class="filter svenja col mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/waffle.jpg" title="Waffles" alt="Image Waffles" />
+                    <div class="card-body">
+                        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                        <h4 class="card-title"><i class="fas fa-utensils"></i> Waffles</h4>
+                        <hr>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="rounded-bottom mdb-color lighten-3 pt-3">
+                        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
+                            <li class="list-inline-item white-text">
+                                <i class="far fa-hourglass pr-1"></i>16 minutes | 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="far fa-star"></i>
+                            </li>
+                            <li class="list-inline-item pr-4"><a href="#" class="btn btn-success">See recipe!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .Card -->
+
+            <!-- Card -->
+            <div class="filter heiko col mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/pasta-verdura.jpg" title="Pasta verdura" alt="Image Pasta verdura" />
+                    <div class="card-body">
+                        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                        <h4 class="card-title"><i class="fas fa-utensils"></i> Pasta Verdura</h4>
+                        <hr>
+                        <p class="card-text">Tasty pasta with Asian chili sauce marinated chicken breast fillet and vegetables, finished off with garlic and olive oil.</p>
+                    </div>
+                    <div class="rounded-bottom mdb-color lighten-3 pt-3">
+                        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
+                            <li class="list-inline-item white-text">
+                                <i class="far fa-hourglass pr-1"></i>24 minutes | 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="far fa-star"></i>
+                            </li>
+                            <li class="list-inline-item pr-4"><a href="#" class="btn btn-success">See recipe!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .Card -->
+
+            <!-- Card -->
+            <div class="filter joseph col mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/burger.jpg" title="Nebraska Burger" alt="Image Nebraska Burger" />
+                    <div class="card-body">
+                        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                        <h4 class="card-title"><i class="fas fa-utensils"></i> Nebraska Burger</h4>
+                        <hr>
+                        <p class="card-text">Our Nebraska Burger consists of 100 % juicy Greater Omaha Beef, fresh Guacamole, Jalapeño Chilies and Bone Suckin' Sauce.</p>
+                    </div>
+                    <div class="rounded-bottom mdb-color lighten-3 pt-3">
+                        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
+                            <li class="list-inline-item white-text">
+                                <i class="far fa-hourglass pr-1"></i>35 minutes | 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star-half-alt"></i>
+                            </li>
+                            <li class="list-inline-item pr-4"><a href="#" class="btn btn-success">See recipe!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .Card -->
+
+            <!-- Card -->
+            <div class="filter svenja col mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/waffle.jpg" title="Waffles" alt="Image Waffles" />
+                    <div class="card-body">
+                        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                        <h4 class="card-title"><i class="fas fa-utensils"></i> Waffles</h4>
+                        <hr>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="rounded-bottom mdb-color lighten-3 pt-3">
+                        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
+                            <li class="list-inline-item white-text">
+                                <i class="far fa-hourglass pr-1"></i>16 minutes | 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="far fa-star"></i>
+                            </li>
+                            <li class="list-inline-item pr-4"><a href="#" class="btn btn-success">See recipe!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .Card -->
+
+            <!-- Card -->
+            <div class="filter heiko col mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/pasta-verdura.jpg" title="Pasta verdura" alt="Image Pasta verdura" />
+                    <div class="card-body">
+                        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                        <h4 class="card-title"><i class="fas fa-utensils"></i> Pasta Verdura</h4>
+                        <hr>
+                        <p class="card-text">Tasty pasta with Asian chili sauce marinated chicken breast fillet and vegetables, finished off with garlic and olive oil.</p>
+                    </div>
+                    <div class="rounded-bottom mdb-color lighten-3 pt-3">
+                        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
+                            <li class="list-inline-item white-text">
+                                <i class="far fa-hourglass pr-1"></i>24 minutes | 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="far fa-star"></i>
+                            </li>
+                            <li class="list-inline-item pr-4"><a href="#" class="btn btn-success">See recipe!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .Card -->
+
+            <!-- Card -->
+            <div class="filter joseph col mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/burger.jpg" title="Nebraska Burger" alt="Image Nebraska Burger" />
+                    <div class="card-body">
+                        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                        <h4 class="card-title"><i class="fas fa-utensils"></i> Nebraska Burger</h4>
+                        <hr>
+                        <p class="card-text">Our Nebraska Burger consists of 100 % juicy Greater Omaha Beef, fresh Guacamole, Jalapeño Chilies and Bone Suckin' Sauce.</p>
+                    </div>
+                    <div class="rounded-bottom mdb-color lighten-3 pt-3">
+                        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
+                            <li class="list-inline-item white-text">
+                                <i class="far fa-hourglass pr-1"></i>35 minutes | 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star-half-alt"></i>
+                            </li>
+                            <li class="list-inline-item pr-4"><a href="#" class="btn btn-success">See recipe!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .Card -->
+
+            <!-- Card -->
+            <div class="filter svenja col mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/waffle.jpg" title="Waffles" alt="Image Waffles" />
+                    <div class="card-body">
+                        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                        <h4 class="card-title"><i class="fas fa-utensils"></i> Waffles</h4>
+                        <hr>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="rounded-bottom mdb-color lighten-3 pt-3">
+                        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
+                            <li class="list-inline-item white-text">
+                                <i class="far fa-hourglass pr-1"></i>16 minutes | 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="far fa-star"></i>
+                            </li>
+                            <li class="list-inline-item pr-4"><a href="#" class="btn btn-success">See recipe!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .Card -->
+
+            <!-- Card -->
+            <div class="filter heiko col mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/pasta-verdura.jpg" title="Pasta verdura" alt="Image Pasta verdura" />
+                    <div class="card-body">
+                        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                        <h4 class="card-title"><i class="fas fa-utensils"></i> Pasta Verdura</h4>
+                        <hr>
+                        <p class="card-text">Tasty pasta with Asian chili sauce marinated chicken breast fillet and vegetables, finished off with garlic and olive oil.</p>
+                    </div>
+                    <div class="rounded-bottom mdb-color lighten-3 pt-3">
+                        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
+                            <li class="list-inline-item white-text">
+                                <i class="far fa-hourglass pr-1"></i>24 minutes | 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="far fa-star"></i>
+                            </li>
+                            <li class="list-inline-item pr-4"><a href="#" class="btn btn-success">See recipe!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .Card -->
+
+            <!-- Card -->
+            <div class="filter joseph col mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/burger.jpg" title="Nebraska Burger" alt="Image Nebraska Burger" />
+                    <div class="card-body">
+                        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+                        <h4 class="card-title"><i class="fas fa-utensils"></i> Nebraska Burger</h4>
+                        <hr>
+                        <p class="card-text">Our Nebraska Burger consists of 100 % juicy Greater Omaha Beef, fresh Guacamole, Jalapeño Chilies and Bone Suckin' Sauce.</p>
+                    </div>
+                    <div class="rounded-bottom mdb-color lighten-3 pt-3">
+                        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
+                            <li class="list-inline-item white-text">
+                                <i class="far fa-hourglass pr-1"></i>35 minutes | 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star-half-alt"></i>
+                            </li>
+                            <li class="list-inline-item pr-4"><a href="#" class="btn btn-success">See recipe!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .Card -->
+
         </div>
 
-    <div class="container mt-5">
-      <div class="row row-cols-1 row-cols-sm-2 row row-cols-lg-3">
-        <div class="filter svenja col mb-4">
-          <div class="card border-green bg-green">
-            <img src="img/waffle.jpg" class="card-img-top" alt="Savory Waffle with Spring onions and bell pepper.">
-              <div class="card-body">
-                <h5 class="card-title text-center text-green">Card title</h5>
-                <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-          </div>
-        </div>
-
-        <div class="filter svenja col mb-4">   <!-- Card -->
-<div class="card">
-
-    <!-- Card image -->
-    <img class="card-img-top" src="img/pasta-verdura.jpg" alt="Card image cap">
-  
-    <!-- Card content -->
-    <div class="card-body">
-  
-        <!-- Social shares button -->
-    <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
-    <!-- Title -->
-    <h4 class="card-title"><i class="fas fa-utensils"></i> Pasta Verdura</h4>
-    <hr>
-      <!-- Text -->
-      <p class="card-text">Tasty pasta with Asian chili sauce marinated chicken breast fillet and vegetables.</p>
-      <!-- Button -->
-      
-  
     </div>
-    <!-- Card footer -->
-   <!-- Card footer -->
-   <div class="rounded-bottom mdb-color lighten-3 pt-3">
-    <ul class="list-unstyled list-inline font-small" style="text-align: right;">
-      <li class="list-inline-item white-text" style="">
-        <i class="far fa-hourglass pr-1"></i>24 minutes | 
-        <i class="fas fa-star"></i> 
-        <i class="fas fa-star"></i> 
-        <i class="fas fa-star"></i> 
-        <i class="fas fa-star"></i> 
-        <i class="far fa-star"></i>
-    </li>
-      <li class="list-inline-item pr-4"><a href="#" class="btn btn-primary">See recipe!</a></li>
-    </ul>
-  </div>
-  </div>
-  <!-- Card --></div>
-
-  <div class="filter joseph col mb-4">   <!-- Card -->
-    <div class="card">
-    
-        <!-- Card image -->
-        <img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
-      
-        <!-- Card content -->
-        <div class="card-body">
-      
-            <!-- Social shares button -->
-        <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
-        <!-- Title -->
-        <h4 class="card-title"><i class="fas fa-utensils"></i> Nebraska Burger</h4>
-        <hr>
-          <!-- Text -->
-          <p class="card-text">Our Nebraska Burger consists of 100 % juicy Greater Omaha Beef, fresh Guacamole, Jalapeño Chilies and Bone Suckin' Sauce.</p>
-          <!-- Button -->
-          
-      
-        </div>
-        <!-- Card footer -->
-       <!-- Card footer -->
-       <div class="rounded-bottom mdb-color lighten-3 pt-3">
-        <ul class="list-unstyled list-inline font-small" style="text-align: right;">
-          <li class="list-inline-item white-text" style="width:207px;text-align: left;vertical-align: top;padding:8px 5px 0 0">
-            <i class="far fa-hourglass pr-1"></i>35 minutes | 
-            <i class="fas fa-star"></i> 
-            <i class="fas fa-star"></i> 
-            <i class="fas fa-star"></i> 
-            <i class="fas fa-star"></i> 
-            <i class="fas fa-star-half-alt"></i>
-        </li>
-
-          <li class="list-inline-item pr-4">
-               <!-- Link -->
-            <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                <h5 class="waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
-              </a>
-          </li>
-        </ul>
-      </div>
-      </div>
-      <!-- Card --></div>
-
-
-				<div class="filter joseph col mb-4">
-          <div class="card border-green bg-green">
-            <img src="img/waffle.jpg" class="card-img-top" alt="Savory Waffle with Spring onions and bell pepper.">
-              <div class="card-body">
-                <h5 class="card-title text-center text-green">Card title</h5>
-                <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-          </div>
-        </div>
-
-				<div class="filter heiko col mb-4">
-          <div class="card border-green bg-green">
-            <img src="img/waffle.jpg" class="card-img-top" alt="Savory Waffle with Spring onions and bell pepper.">
-              <div class="card-body">
-                <h5 class="card-title text-center text-green">Card title</h5>
-                <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-          </div>
-        </div>
-
-				<div class="filter svenja col mb-4">
-          <div class="card border-green bg-green">
-            <img src="img/waffle.jpg" class="card-img-top" alt="Savory Waffle with Spring onions and bell pepper.">
-              <div class="card-body">
-                <h5 class="card-title text-center text-green">Card title</h5>
-                <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-          </div>
-        </div>
-
-				<div class="filter joseph col mb-4">
-          <div class="card border-green bg-green">
-            <img src="img/waffle.jpg" class="card-img-top" alt="Savory Waffle with Spring onions and bell pepper.">
-              <div class="card-body">
-                <h5 class="card-title text-center text-green">Card title</h5>
-                <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-          </div>
-        </div>
-
-				<div class="filter heiko col mb-4">
-          <div class="card border-green bg-green">
-            <img src="img/waffle.jpg" class="card-img-top" alt="Savory Waffle with Spring onions and bell pepper.">
-              <div class="card-body">
-                <h5 class="card-title text-center text-green">Card title</h5>
-                <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-          </div>
-        </div>
-
-      </div>
-  </div>
-</div>
-
-</div>
 
 	<!-- Footer -->
 	<footer class="page-footer font-small stylish-color-dark pt-4">
         <div class="container">
-	  <!-- Footer Links -->
-	  <div class="container text-center text-md-left">
-	    <!-- Grid row -->
-	    <div class="row">
-	      <!-- Grid column -->
-	      <div class="col-md-8 mx-auto">
-	        <!-- Content -->
-	        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About us</h5>
-	        <p>CookBook is a sleek multiplatform recipe manager, accessible on and offline, across your Apple iOS or Android devices, on your tablet, laptop or desktop.</p>
-	      </div>
-	      <!-- Grid column -->
-	      <!-- Grid column -->
-	      <div class="col-md-2 mx-auto">
-	        <!-- Links -->
-	        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-	        <ul class="list-unstyled">
-	          <li><a href="/">Home</a></li>
-	          <li><a href="#!">FAQ</a></li>
-	          <li><a href="#!">Terms</a></li>
-	          <li><a href="#!">Privacy Policy</a></li>
-	        </ul>
-	      </div>
-	      <!-- Grid column -->
-	      <!-- Grid column -->
-	      <div class="col-md-2 mx-auto">
-	        <!-- Links -->
-	        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">App</h5>
-	        <ul class="list-unstyled download-badges">
-                <li><a target="_blank" href="http://play.google.com/store/apps/details?id=com.cookbook.cb" title="" class="badge-googleplay" data-aos-off="fade-up">Play Store</a></li>
-                <li><a target="_blank" href="https://itunes.apple.com/us/app/cookbook/id1073341917?ls=1&amp;mt=8" title="" class="badge-appstore" data-aos-off="fade-up">App Store</a></li>
-	        </ul>
-	      </div>
-	      <!-- Grid column -->
-			</div>
-	    <!-- Grid row -->
-	  </div>
-      <!-- Footer Links -->
-    </div>
-	  <hr class="hrnew">
-	  <!-- Call to action -->
-	  <ul class="list-unstyled list-inline text-center py-2" style="">
-	    <li class="list-inline-item" style="vertical-align: top;padding:8px 5px 0 0"><h5 class="mb-1" style="">You have good recipes?</h5></li>
-	    <li class="list-inline-item"><a href="#!" class="btn btn-danger btn-rounded">Join in!</a></li>
-	  </ul>
-	  <!-- Call to action -->
-	  <hr class="hrnew">
-	  <!-- Social buttons -->
-	  <ul class="list-unstyled list-inline text-center">
-	    <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-facebook-f"></a></li>
-	    <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-twitter"></a></li>
-	    <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-whatsapp"></a></li>
-	    <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-linkedin-in"></a></li>
-	    <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-instagram"></a></li>
-	  </ul>
-	  <!-- Social buttons -->
-	  <!-- Copyright -->
-	  <div class="footer-copyright">
-	    Made with <i class="far fa-heart" style="color:red;"></i> from
-	    <a href="https://github.com/SE-Nie/" target="_blank">Svenja</a>,
-	    <a href="https://github.com/sly18Peso4all/" target="_blank">Joseph</a> &
-	    <a href="https://github.com/Superv1sor/" target="_blank">Heiko</a> &ndash; 2020
-	  </div>
-	  <!-- Copyright -->
-	</footer>
-	<!-- Footer -->
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-8 mx-auto">
+                        <!-- Content -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About us</h5>
+                        <p>CookBook is a sleek multiplatform recipe manager, accessible on and offline, across your Apple iOS or Android devices, on your tablet, laptop or desktop.</p>
+                    </div>
+                    <!-- .Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#!">FAQ</a></li>
+                            <li><a href="#!">Terms</a></li>
+                            <li><a href="#!">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!-- .Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">App</h5>
+                        <ul class="list-unstyled download-badges">
+                            <li><a target="_blank" href="http://play.google.com/store/apps/details?id=com.cookbook.cb" title="" class="badge-googleplay" data-aos-off="fade-up">Play Store</a></li>
+                            <li><a target="_blank" href="https://itunes.apple.com/us/app/cookbook/id1073341917?ls=1&amp;mt=8" title="" class="badge-appstore" data-aos-off="fade-up">App Store</a></li>
+                        </ul>
+                    </div>
+                    <!-- .Grid column -->
+                </div>
+                <!-- .Grid row -->
+            </div>
+            <!-- .Footer Links -->
+        </div>
+        <hr class="hrnew">
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item" style="vertical-align: top;padding:8px 5px 0 0"><h5 class="mb-1">You have good recipes?</h5></li>
+            <li class="list-inline-item"><a href="#!" class="btn btn-danger btn-sm">Join in!</a></li>
+        </ul>
+        <!-- .Call to action -->
+        <hr class="hrnew">
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-facebook-f"></a></li>
+            <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-twitter"></a></li>
+            <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-whatsapp"></a></li>
+            <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-linkedin-in"></a></li>
+            <li class="list-inline-item"><a href="#" class="scl-btn scl-crcl shadow fab fa-instagram"></a></li>
+        </ul>
+        <!-- .Social buttons -->
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            Made with <i class="far fa-heart" style="color:red;"></i> from
+            <a href="https://github.com/SE-Nie/" target="_blank">Svenja</a>,
+            <a href="https://github.com/sly18Peso4all/" target="_blank">Joseph</a> &
+            <a href="https://github.com/Superv1sor/" target="_blank">Heiko</a> &ndash; 2020
+        </div>
+        <!-- .Copyright -->
+    </footer>
+    <!-- .Footer -->
+
 </body>
 </html>
