@@ -21,6 +21,38 @@ h1, h2, h3, h4, h5, h6 {
     margin: px 0 0 0;
     padding: .74rem 2.14rem;
 }
+
+
+.hero {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    background-image: url(./img/assorted-salads-on-bowls-1640773.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    height: 80vh;
+  }
+  
+  .hero-heading {
+    font-weight: 400;
+  }
+  
+  .hero .container {
+    max-width: 40rem;
+    background: rgba(255,255,255,0.7);
+    padding: 2rem;
+    color: #000;
+  }
+  
+  .hero p {
+      color: #000;
+      text-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-weight: 300;
+  }
+
+
   
 hr.hrnew {
     margin-top: 1rem;
