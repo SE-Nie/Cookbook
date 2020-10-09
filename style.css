@@ -44,8 +44,12 @@ table.table {
     margin-bottom: 50px;
 }
 
+table td {
+    padding-left: 30px!important;
+}
+
 table td.firstcol {
-    width: 200px;
+    width: 120px;
 }
 
 .sharedetail {
