@@ -108,7 +108,6 @@ ol li {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
-    height: 80vh;
   }
   
   .hero-heading {
@@ -116,16 +115,23 @@ ol li {
   }
   
   .hero .container {
-    max-width: 40rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
     background: rgba(255,255,255,0.7);
-    padding: 2rem;
+    padding: 4rem 3rem;
     color: #000;
+  }
+
+  @media screen and (max-width: 800px) {
+    .hero {padding:0;}
+    .hero .container {margin-top: 0;margin-bottom: 1rem;}
   }
   
   .hero p {
       color: #000;
       text-shadow: 0 0 10px rgba(0,0,0,0.1);
-      font-weight: 300;
+      font-weight: 400;
   }
 
 
