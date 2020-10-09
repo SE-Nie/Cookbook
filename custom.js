@@ -11,3 +11,8 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 });
+
+/* Alert with URL */
+function myShareFunction() {
+    alert('Thank you for sharing our recipe: '+document.URL);
+}
